@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <div id="logo">
+                <h2>Imagify</h2>
+            </div>
+            <div id="nav-links">
+                <ul>
+                    <li><a href="#main-section">Home</a></li>
+                    <li><a href="#gallery-section">Images</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <hr>
+
+    <section id="main-section">
+        <h2>Featured Images</h2>
+    <div class="gallery">
+        <div class="image-container">
+            <img src="./images/img1.webp" alt="Image 1">
+        </div>
+        <div class="image-container">
+            <img src="./images/img2.webp" alt="Image 2">
+        </div>
+        <div class="image-container">
+            <img src="./images/img3.webp" alt="Image 3">
+        </div>
+        <div class="image-container">
+            <img src="./images/img4.webp" alt="Image 4">
+        </div>
+        <div class="image-container">
+            <img src="./images/img1.webp" alt="Image 5">
+        </div>
+    </div>
+</section>
+
+ <!-- Image upload section -->
+ <section id="upload-section">
+    <input type="file" id="file-input" multiple accept="image/*">
+</section>
+
+
+    <section id="gallery-section">
+        <h2>All Images</h2>
+        <div class="image-gallery" id="uploaded-gallery">
+            <img src="./images/img1.webp" alt="">
+            <img src="./images/img2.webp" alt="">
+            <img src="./images/img3.webp" alt="">
+            <img src="./images/img4.webp" alt="">
+            <img src="./images/img1.webp" alt="">
+            <img src="./images/img1.webp" alt="">
+            <img src="./images/img2.webp" alt="">
+            <img src="./images/img3.webp" alt="">
+            <img src="./images/img4.webp" alt="">
+            <img src="./images/img1.webp" alt="">
+        </div>
+    </section>
+
+    <script src="./script.js"></script>
+</body>
+</html>

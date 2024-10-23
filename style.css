@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000
+}
+
+header {
+    padding: 2em;
+    background-color: #000;
+}
+#navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#logo {
+    width: 100px;
+    font-size: 20px;
+    color: #00ffff;
+}
+
+#nav-links li {
+    list-style: none;
+    display: inline-block;
+    margin: 0px 10px;
+}
+
+#nav-links li a {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+#nav-links li a:hover {
+    color: #00ffff;
+}
+
+
+
+
+/*main section*/
+
+#main-section {
+    margin-top: 20px;
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: wrap;
+    gap: 5px;
+    width: 80%;
+    margin: 20px auto;
+}
+
+.image-container {
+    flex: 1;
+    overflow: hidden;
+    transition: flex 0.5s ease;
+    cursor: pointer;
+    height: 350px; 
+}
+
+.image-container img {
+    width: 20%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.image-container:hover {
+    flex: 3;
+}
+
+.image-container:hover img {
+    width: 100%;
+    transform: scale(1.1);
+}
+
+
+
+#gallery-section {
+    margin-top: 30px;
+}
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.image-gallery img{
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.image-gallery img:hover {
+    transform: scale(1.1);
+}
+
+#upload-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#file-input {
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.uploaded-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin: 10px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.uploaded-image:hover {
+    transform: scale(1.1);
+}
+
+
+
+h2 {
+    color: #00ffff;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
